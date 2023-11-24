@@ -4,7 +4,7 @@ import { mdiHome, mdiApplicationArray } from '@mdi/js'
 </script>
 
 <template>
-  <nav class="menu bg-base-200 w-80 text-white">
+  <nav class="menu bg-base-200 w-80 text-white relative">
     <h1 class="text-4xl p-4 mb-8">Nuxt Applications</h1>
     <ul>
       <li class="mb-2">
@@ -29,30 +29,12 @@ import { mdiHome, mdiApplicationArray } from '@mdi/js'
         </details>
       </li>
     </ul>
+    <div
+      class="avatar absolute bottom-8 left-8 flex justify-between items-center gap-x-6 hover:cursor-pointer hover:text-green-400">
+      <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <img src="/images/mypix.jpg" />
+      </div>
+      <p class="text-xl">Tokuyama Shota</p>
+    </div>
   </nav>
-
-  <!-- <div class="flex flex-col bg-clip-border  h-screen w-full max-w-[32rem] p-4">
-    <h1 class="text-4xl p-4">Nuxt Applications</h1>
-    <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal ">
-      <div role="button" tabindex="0"
-        class="w-full p-3 rounded-lg text-center leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-gray-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
-        <div class="flex items-center gap-x-4 text-3xl">
-          <svg-icon type="mdi" :path="mdiHome" />
-          <NuxtLink to="/">Home</NuxtLink>
-        </div>
-      </div>
-      <div role="button" tabindex="0" @click="pushAccordion"
-        class="flex items-center w-full p-3 rounded-lg text-center leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-gray-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
-        <div class="flex items-center gap-x-4">
-          <svg-icon type="mdi" :path="mdiApplicationArray" />
-          <div class="text-3xl">AppList</div>
-        </div>
-        <ul v-show="toggleAccordion" class="mt-6">
-          <li class="pl-14 text-2xl">
-            <NuxtLink to="/count">Counter</NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div> -->
 </template>
