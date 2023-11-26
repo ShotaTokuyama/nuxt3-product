@@ -7,5 +7,5 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <button class="btn">{{ name }}</button>
+  <button class="btn btn-outline btn-accent">{{ name }}</button>
 </template>

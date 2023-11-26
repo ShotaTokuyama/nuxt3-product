@@ -23,7 +23,10 @@ import { mdiHome, mdiApplicationArray } from '@mdi/js'
           </summary>
           <ul class="before:w-1 text-xl">
             <li>
-              <NuxtLink to="/count">Counter</NuxtLink>
+              <NuxtLink to="/counter">Counter</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/todo">Todo</NuxtLink>
             </li>
           </ul>
         </details>

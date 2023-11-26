@@ -2,10 +2,11 @@
 const btnTitle = ['add', 'delete', 'reset'];
 const { count, inc, dec, res } = useCounter(0);
 </script>
+
 <template>
-  <h1 class="text-6xl text-green-400 w-full mb-8">Counter</h1>
+  <h1 class="text-6xl text-green-400 w-full mb-8">Counter App</h1>
   <p class="text-red-400 text-5xl mb-8 text-center">{{ count }}</p>
-  <div class="flex gap-x-4">
+  <div class="flex gap-x-4 justify-center">
     <Button @click="inc" :name="btnTitle[0]" />
     <Button @click="dec" :name="btnTitle[1]" />
     <Button @click="res" :name="btnTitle[2]" />
