@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiHome, mdiApplicationArray } from '@mdi/js'
+import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccountMail } from '@mdi/js'
 </script>
 
 <template>
@@ -23,13 +23,31 @@ import { mdiHome, mdiApplicationArray } from '@mdi/js'
           </summary>
           <ul class="before:w-1 text-xl">
             <li>
-              <NuxtLink to="/counter">Counter</NuxtLink>
+              <NuxtLink to="/applist/counter">Counter</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/todo">Todo</NuxtLink>
+              <NuxtLink to="/applist/todo">Todo</NuxtLink>
             </li>
           </ul>
         </details>
+      </li>
+      <li class="mb-2">
+        <div class="flex items-center gap-x-4 text-2xl">
+          <svg-icon type="mdi" :path="mdiGithub" />
+          <a href="https://github.com/ShotaTokuyama/nuxt3-product" target="_blank">GitHub</a>
+        </div>
+      </li>
+      <li class="mb-2">
+        <div class="flex items-center gap-x-4 text-2xl">
+          <svg-icon type="mdi" :path="mdiAlphaQCircle" />
+          <a href="https://qiita.com/ShotaTokuyama" target="_blank">Qiita</a>
+        </div>
+      </li>
+      <li class="mb-2">
+        <div class="flex items-center gap-x-4 text-2xl">
+          <svg-icon type="mdi" :path="mdiCardAccountMail" />
+          <NuxtLink to="/contact">Contact</NuxtLink>
+        </div>
       </li>
     </ul>
     <div
