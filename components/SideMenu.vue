@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccountMail } from '@mdi/js'
+import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccountMail, mdiPalette } from '@mdi/js'
 </script>
 
 <template>
@@ -28,6 +28,12 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
             <li>
               <NuxtLink to="/applist/todo">Todo</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/applist/weather">Weather</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/applist/gpt3">GPT-3</NuxtLink>
+            </li>
           </ul>
         </details>
       </li>
@@ -47,6 +53,13 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
         <div class="flex items-center gap-x-4 text-2xl">
           <svg-icon type="mdi" :path="mdiCardAccountMail" />
           <NuxtLink to="/contact">Contact</NuxtLink>
+        </div>
+      </li>
+      <li class="mb-2">
+        <div class="flex items-center gap-x-4 text-2xl flex-wrap">
+          <svg-icon type="mdi" :path="mdiPalette" />
+          <p>Theme</p>
+          <Theme />
         </div>
       </li>
     </ul>
