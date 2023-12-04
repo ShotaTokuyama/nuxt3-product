@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const btnTitle = 'SEND MESSAGE';
 const keyword = ref('');
 const generateText = ref('')
 
@@ -24,7 +23,7 @@ const handleClick = async () => {
   <div class="flex gap-x-4 mb-8 justify-center">
     <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"
       v-model="keyword" />
-    <Button :name="btnTitle" @click="handleClick" />
+    <Button name="SEND MESSAGE" @click="handleClick" />
   </div>
   <div>
     <h2>生成テキスト</h2>

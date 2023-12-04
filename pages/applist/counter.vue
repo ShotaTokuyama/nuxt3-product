@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const btnTitle = ['add', 'delete', 'reset'];
 const { count, inc, dec, res } = useCounter(0);
 </script>
 
@@ -7,8 +6,8 @@ const { count, inc, dec, res } = useCounter(0);
   <h1 class="text-6xl text-green-400 w-full mb-8">Counter App</h1>
   <p class="text-red-400 text-5xl mb-8 text-center">{{ count }}</p>
   <div class="flex gap-x-4 justify-center">
-    <Button @click="inc" :name="btnTitle[0]" />
-    <Button @click="dec" :name="btnTitle[1]" />
-    <Button @click="res" :name="btnTitle[2]" />
+    <Button @click="inc" name="add" />
+    <Button @click="dec" name="delete" />
+    <Button @click="res" name="reset" />
   </div>
 </template>

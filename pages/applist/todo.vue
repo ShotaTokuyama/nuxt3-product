@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const btnTitle = ['追加', '削除'];
 const { addTodo, deleteTodo, closeAlert, inputTodo, todos, todoChecked, showAlert } = useTodo();
 </script>
 
@@ -8,8 +7,8 @@ const { addTodo, deleteTodo, closeAlert, inputTodo, todos, todoChecked, showAler
   <div class="flex gap-x-4 mb-8 justify-center">
     <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"
       v-model="inputTodo" />
-    <Button :name="btnTitle[0]" @click="addTodo" />
-    <Button :name="btnTitle[1]" @click="deleteTodo" />
+    <Button name="追加" @click="addTodo" />
+    <Button name="削除" @click="deleteTodo" />
   </div>
   <div class="menu bg-base-200 rounded-box">
     <p class="menu-title text-red-400 text-xl" v-if="todos.length > 0">TodoList</p>
