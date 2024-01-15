@@ -2,7 +2,7 @@ export default defineEventHandler(async (event) => {
   const { prompt } = await readBody(event);
 
   const payload = {
-    model: "text-davinci-003",
+    model: "gpt-3.5-turbo-instruct",
     prompt,
     temperature: 0.7,
     top_p: 1,

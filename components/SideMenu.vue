@@ -4,8 +4,8 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
 </script>
 
 <template>
-  <nav class="menu bg-base-200 w-80 text-white relative">
-    <h1 class="text-4xl p-4 mb-8">Nuxt Applications</h1>
+  <nav class="menu w-96 bg-base-200 text-white relative">
+    <h1 class="text-3xl p-4 mb-8">Nuxt Applications</h1>
     <ul>
       <li class="mb-2">
         <div class="flex items-center gap-x-4 text-2xl">
@@ -27,12 +27,6 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
             </li>
             <li>
               <NuxtLink to="/applist/todo">Todo</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/applist/weather">Weather</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/applist/gpt3">GPT-3</NuxtLink>
             </li>
           </ul>
         </details>
