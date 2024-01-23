@@ -28,6 +28,9 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
             <li>
               <NuxtLink to="/applist/todo">Todo</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/applist/jsonp">Json Placeholder</NuxtLink>
+            </li>
           </ul>
         </details>
       </li>

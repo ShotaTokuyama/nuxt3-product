@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@formkit/nuxt',
-    '@nuxt/content',
     '@nuxtjs/color-mode'
   ],
   colorMode: {
