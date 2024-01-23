@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     dataValue: 'theme', // activate data-theme in <html> tag
     classSuffix: '',
   },
+  experimental: {
+    viewTransition: true,
+  },
 })
