@@ -31,6 +31,9 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
             <li>
               <NuxtLink to="/applist/jsonp">Json Placeholder</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/applist/weather">Weather</NuxtLink>
+            </li>
           </ul>
         </details>
       </li>
