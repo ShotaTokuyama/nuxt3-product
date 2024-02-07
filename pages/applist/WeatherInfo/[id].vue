@@ -26,7 +26,7 @@ const params: {
   // 言語設定のクエリパラメータ
   lang: "ja",
   q: selectedCity.value.q,
-  appid: "486a5f3e01faf0f76819a60cae341270",
+  appid: "WEATHER_API_KEY",
 };
 // クエリパラメータを生成
 const queryParams = new URLSearchParams(params);

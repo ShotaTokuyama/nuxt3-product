@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccountMail, mdiPalette } from '@mdi/js'
+import SvgIcon from "@jamescoyle/vue-icon";
+import {
+  mdiHome,
+  mdiApplicationArray,
+  mdiGithub,
+  mdiAlphaQCircle,
+  mdiCardAccountMail,
+  mdiPalette,
+} from "@mdi/js";
 </script>
 
 <template>
@@ -34,13 +41,20 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
             <li>
               <NuxtLink to="/applist/weather">Weather</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/applist/tweet">Tweet</NuxtLink>
+            </li>
           </ul>
         </details>
       </li>
       <li class="mb-2">
         <div class="flex items-center gap-x-4 text-2xl">
           <svg-icon type="mdi" :path="mdiGithub" />
-          <a href="https://github.com/ShotaTokuyama/nuxt3-product" target="_blank">GitHub</a>
+          <a
+            href="https://github.com/ShotaTokuyama/nuxt3-product"
+            target="_blank"
+            >GitHub</a
+          >
         </div>
       </li>
       <li class="mb-2">
@@ -64,8 +78,11 @@ import { mdiHome, mdiApplicationArray, mdiGithub, mdiAlphaQCircle, mdiCardAccoun
       </li>
     </ul>
     <div
-      class="avatar absolute bottom-8 left-8 flex justify-between items-center gap-x-6 hover:cursor-pointer hover:text-green-400">
-      <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+      class="avatar absolute bottom-8 left-8 flex justify-between items-center gap-x-6 hover:cursor-pointer hover:text-green-400"
+    >
+      <div
+        class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+      >
         <img src="/images/mypix.jpg" />
       </div>
       <p class="text-xl">Tokuyama Shota</p>
