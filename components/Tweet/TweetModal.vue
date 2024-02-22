@@ -34,7 +34,7 @@ const onSubmit = () => {
       </div>
       <div class="modal-footer">
         <slot name="footer">
-          <Button name="OK" @click="onSubmit" />
+          <ActionButton name="OK" @click="onSubmit" />
         </slot>
       </div>
     </div>

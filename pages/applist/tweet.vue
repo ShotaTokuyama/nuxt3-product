@@ -48,7 +48,7 @@ const deleteTweet = (id: string) => {
   <div class="container">
     <div class="container-header">
       <p>{{ userName }}</p>
-      <Button name="投稿者名設定" @click="onClickSetting" />
+      <ActionButton name="投稿者名設定" @click="onClickSetting" />
     </div>
     <Teleport to="body">
       <TweetModal v-if="isModalOpen" @submit="onSubmitSettings" />

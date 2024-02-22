@@ -18,8 +18,8 @@ const onCancel = () => {
       </div>
       <div class="modal-footer">
         <slot name="footer">
-          <Button name="OK" @click="onSubmit" />
-          <Button name="Cancel" @click="onCancel" />
+          <ActionButton name="OK" @click="onSubmit" />
+          <ActionButton name="Cancel" @click="onCancel" />
         </slot>
       </div>
     </div>

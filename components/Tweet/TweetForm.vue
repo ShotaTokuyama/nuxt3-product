@@ -28,7 +28,7 @@ const emits = defineEmits(["submit"]);
         placeholder="Type here"
         class="input input-bordered input-primary w-full max-w-xs"
       />
-      <Button
+      <ActionButton
         name="submit"
         @click.prevent="onSubmit"
         type="submit"
