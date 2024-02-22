@@ -4,7 +4,9 @@ const handleClick = async () => {
   const { data } = await useFetch("/api/jsonp", {
     method: "POST",
   });
-  text.value = data.value;
+  for (let json in data.value) {
+    text.value += json + ": " + data.value[json];
+  }
 };
 </script>
 
