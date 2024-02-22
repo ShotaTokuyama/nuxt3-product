@@ -14,7 +14,7 @@ import { mdiPalette } from "@mdi/js";
       </li>
       <li class="dropdown dropdown-end ml-32">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-16 rounded-full">
+          <div class="w-20 rounded-full">
             <img src="/images/mypix.jpg" />
           </div>
         </div>
