@@ -1,12 +1,15 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="flex h-screen w-full justify-between">
-    <SideMenu />
-    <main class="my-28 flex justify-center">
-      <div class="block">
-        <slot />
-      </div>
-    </main>
-    <ChatGpt />
+  <div class="h-screen w-full">
+    <GlobalHeader />
+    <div class="flex gap-x-24 h-screen justify-between">
+      <GlobalLeftMenu />
+      <main class="pt-40 flex justify-center">
+        <div class="block">
+          <slot />
+        </div>
+      </main>
+      <GlobalRightMenu />
+    </div>
   </div>
 </template>
