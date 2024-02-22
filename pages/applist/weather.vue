@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { City } from "@types/interfaces";
+import type { City } from "@/types/interfaces";
 
 const cityList = useState<Map<number, City>>("cityList");
 </script>

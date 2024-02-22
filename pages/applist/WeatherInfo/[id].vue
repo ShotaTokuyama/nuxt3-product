@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import type { City } from "@types/interfaces";
-import { computed } from "vue";
+import type { City } from "@/types/interfaces";
 
 // ルートオブジェクト
 const route = useRoute();
