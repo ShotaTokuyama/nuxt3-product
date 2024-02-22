@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import SvgIcon from "@jamescoyle/vue-icon";
-import {
-  mdiHome,
-  mdiApplicationArray,
-  mdiGithub,
-  mdiAlphaQCircle,
-  mdiCardAccountMail,
-  mdiPalette,
-} from "@mdi/js";
+import { mdiApplicationArray } from "@mdi/js";
 </script>
 
 <template>
