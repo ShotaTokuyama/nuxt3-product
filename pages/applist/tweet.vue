@@ -1,47 +1,21 @@
 <script setup lang="ts">
-import type { Tweet } from "@/types/Tweet";
 import { userNameKey, updateUserNameKey } from "~/key";
 
-const tweets = ref<Tweet[]>([]);
+const {
+  tweets,
+  userName,
+  isModalOpen,
+  isShowDeleteModal,
+  onSubmitForm,
+  onClickSetting,
+  onSubmitSettings,
+  updateUserName,
+  onClickTweet,
+  onDelete,
+} = useTweet();
 
-const onSubmitForm = (tweet: string) => {
-  tweets.value.push({
-    id: String(Math.random()),
-    text: tweet,
-    userName: userName.value,
-  });
-};
-
-const isModalOpen = ref(false);
-const onClickSetting = () => {
-  isModalOpen.value = true;
-};
-
-const onSubmitSettings = () => {
-  isModalOpen.value = false;
-};
-const userName = ref("");
-const updateUserName = (value: string) => {
-  userName.value = value;
-};
 provide(userNameKey, readonly(userName));
 provide(updateUserNameKey, updateUserName);
-
-const isShowDeleteModal = ref(false);
-const isDeletingID = ref("");
-const onClickTweet = (id: string) => {
-  isShowDeleteModal.value = true;
-  isDeletingID.value = id;
-};
-
-const onDelete = () => {
-  deleteTweet(isDeletingID.value);
-};
-
-const deleteTweet = (id: string) => {
-  tweets.value = tweets.value.filter((tweet) => tweet.id !== id);
-  isShowDeleteModal.value = false;
-};
 </script>
 
 <template>

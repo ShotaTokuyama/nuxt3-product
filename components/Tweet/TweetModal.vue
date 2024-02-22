@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { updateUserNameKey } from "~/key";
 
-const userName = ref("");
+const { userName } = useTweet();
+
 const updateUserName = inject<(name: string) => void>(
   updateUserNameKey,
   () => {}
