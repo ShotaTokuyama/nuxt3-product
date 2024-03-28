@@ -30,6 +30,9 @@ import { mdiApplicationArray } from "@mdi/js";
             <li>
               <NuxtLink to="/applist/tweet">Tweet</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/applist/piniacounter">PiniaCounter</NuxtLink>
+            </li>
           </ul>
         </details>
       </li>

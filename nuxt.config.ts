@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     "@formkit/nuxt",
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
   ],
   colorMode: {
     preference: "dark", // default theme
